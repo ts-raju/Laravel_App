@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('backend.index');
 });
+
+Route::get('/admin/view-profile', function () {
+    return view('backend.view_profile');
+});
