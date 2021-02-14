@@ -23,15 +23,24 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item has-treeview">
+            <a href="/admin" class="nav-link @yield('dashboard')">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
-          
+
+          <li class="nav-item has-treeview">
+            <a href="/admin/profile" class="nav-link @yield('view_profile')">
+              <i class="nav-icon fas fa-user-circle"></i>
+              <p>
+                View Profile
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
@@ -78,7 +87,7 @@
               </li>
             </ul>
           </li>
-          
+
           <li class="nav-header"> ATTRIBUTE SETUP </li>
 
           <li class="nav-item has-treeview">
@@ -104,7 +113,7 @@
               </li>
             </ul>
           </li>
-          
+
           <li class="nav-header"> EXTRA </li>
           <li class="nav-item">
             <a href="pages/calendar.html" class="nav-link">
