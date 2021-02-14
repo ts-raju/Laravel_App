@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+
   <title>AdminLTE 3 | Dashboard</title>
-  
+
   @include('backend.layout.styles')
 
 
@@ -11,19 +11,20 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  
-  @include('backend.layout.nevbar')
-  
 
-  
+  @include('backend.layout.nevbar')
+
+
+
   @include('backend.layout.sidebar')
 
-  
-  <div class="content-wrapper">
-  
 
-    @include('backend.layout.header')
-  
+  <div class="content-wrapper">
+
+    <br>
+
+    {{-- @include('backend.layout.header') --}}
+
 
     <section class="content">
       <div class="container-fluid">
@@ -31,13 +32,13 @@
       </div>
     </section>
 
-      
+
  </div>
 
 
   @include('backend.layout.footer')
 
-  
+
 </div>
 <!-- ./wrapper -->
 
