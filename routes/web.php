@@ -26,7 +26,7 @@ Route::get('/admin/profile', function () {
     return view('backend.profile');
 });
 
-Route::get('/admin/add-profile', function () {
-    return view('backend.add_profile');
+Route::get('/admin/profile', function () {
+    return view('backend.profile.index');
 });
 

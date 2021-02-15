@@ -1,6 +1,7 @@
 @extends('backend.layout.master')
 
-@section('view_profile', 'active')
+@section('main-profile', 'active')
+@section('profile', 'active')
 
 @section('styles')
 
