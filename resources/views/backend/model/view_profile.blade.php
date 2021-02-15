@@ -1,20 +1,14 @@
-@extends('backend.layout.master')
-
-
-@section('add-profile', 'active')
-
-
-@section('content')
-<div class="row">
-    <div class="col-12">
-        <div class="card card-primary">
-        <div class="card-header">
-            <h3 class="card-title"> View Profile </h3>
+<div class="modal fade" id="view-model">
+    <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="modal-header bg-info">
+        <h4 class="modal-title"> View Profile </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
         </div>
-
-
-        <!-- form start -->
         <form role="form">
+        <div class="modal-body">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-4">
@@ -96,13 +90,17 @@
 
             </div>
 
-            <div class="card-footer d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
 
-        </form>
+
+
         </div>
+        <div class="modal-footer justify-content-end">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </form>
     </div>
+    <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div>
-
-@endsection
+<!-- /.modal -->

@@ -34,17 +34,7 @@
 
 
 
-
-          <li class="nav-item has-treeview">
-            <a href="/admin/profile" class="nav-link @yield('view_profile')">
-              <i class="nav-icon fas fa-user-circle"></i>
-              <p>
-                View Profile
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview @yield('popen')">
             <a href="#" class="nav-link @yield('main-profile')">
               <i class="nav-icon fas fa-user"></i>
               <p>
@@ -60,7 +50,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="/admin/view-profile" class="nav-link @yield('view-profile')">
                   <i class="far fa-circle nav-icon"></i>
                   <p> View Profile </p>
                 </a>
