@@ -1,5 +1,8 @@
 @extends('backend.layout.master')
 
+
+@section('title', 'Dashboard')
+
 @section('dashboard', 'active')
 
 

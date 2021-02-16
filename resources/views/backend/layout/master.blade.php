@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title> Laravel_APP</title>
+  <title> @yield('title') </title>
 
   @include('backend.layout.styles')
 

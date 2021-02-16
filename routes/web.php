@@ -29,3 +29,19 @@ Route::get('/admin/profile', function () {
 Route::get('/admin/view-profile', function () {
     return view('backend.profile.view');
 });
+
+Route::get('/admin/add-states', function () {
+    return view('backend.address.state');
+});
+
+Route::get('/admin/add-district', function () {
+    return view('backend.address.district');
+});
+
+Route::get('/admin/create-links', function () {
+    return view('backend.link.create_link');
+});
+
+Route::get('/admin/profile-links', function () {
+    return view('backend.link.view_links');
+});

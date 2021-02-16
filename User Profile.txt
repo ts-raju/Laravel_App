@@ -1,0 +1,46 @@
+User Profile Detials
+
+Personal Detials
+First Name
+Middle Name 
+Last Name
+Sex 
+Date of Birth 
+Occupation 
+Qualification (Bachelor Level, Higher Secondary Level, Illiterate, Illerate, Lower Secondary Lever, Master Level, PHD, Primary, Secondary Level)
+Religion (Buddist, Hindusm, Christian, Jain, Jews, Muslim, Sikh, Others)
+Nationality
+Photo
+
+Family Details 
+Grand Father
+Father Name 
+Mother Name 
+Maritial Stutas (Married, Unmarried, Divorsed, Single, Widow)
+
+Permanent Address
+Country
+Province
+District
+VDC/Municipality 
+Place/Tole
+Phone
+Mobile
+
+Temporary Address
+Country
+Province
+District
+VDC/Municipality 
+Place/Tole
+Phone
+Mobile
+
+
+
+
+
+
+
+
+

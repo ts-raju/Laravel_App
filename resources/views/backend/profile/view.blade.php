@@ -1,6 +1,7 @@
 @extends('backend.layout.master')
 
 
+@section('title', 'View Profile')
 @section('popen', 'menu-open')
 @section('main-profile', 'active')
 @section('view-profile', 'active')

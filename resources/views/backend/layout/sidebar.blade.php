@@ -57,8 +57,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('lopen')">
+            <a href="#" class="nav-link @yield('links')">
               <i class="nav-icon fas fa-link"></i>
               <p>
                 Link Setup
@@ -67,15 +67,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/admin/create-links" class="nav-link @yield('create_links')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Links </p>
+                  <p> Create Links </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="/admin/profile-links" class="nav-link @yield('view_links')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Users Link </p>
+                  <p> Linked Profiles </p>
                 </a>
               </li>
             </ul>
@@ -83,8 +83,8 @@
 
           <li class="nav-header"> ATTRIBUTE SETUP </li>
 
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview @yield('aopen')">
+            <a href="#" class="nav-link @yield('address')">
               <i class="nav-icon fas fa-street-view"></i>
               <p>
                	Address Setup
@@ -93,13 +93,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
+                <a href="/admin/add-states" class="nav-link @yield('state')">
                   <i class="far fa-circle nav-icon"></i>
                   <p> Add Province </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
+                <a href="/admin/add-district" class="nav-link @yield('district')">
                   <i class="far fa-circle nav-icon"></i>
                   <p> Add Districts </p>
                 </a>
