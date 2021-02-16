@@ -134,7 +134,7 @@
         	<section class="col-lg-6 connectedSortable">
                 <div class="card">
 	              <div class="card-header bg-primary">
-	                <h3 class="card-title"> Recently Added Products </h3>
+	                <h3 class="card-title"> Groups </h3>
 
 	                <div class="card-tools">
 	                  <button type="button" class="btn btn-tool" data-card-widget="collapse">

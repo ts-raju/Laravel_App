@@ -26,3 +26,5 @@
 <script src="{{ asset('backend/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('backend/js/demo.js') }}"></script>
+
+@yield('scripts')
