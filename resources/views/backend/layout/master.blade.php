@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title>AdminLTE 3 | Dashboard</title>
+  <title> Laravel_APP</title>
 
   @include('backend.layout.styles')
 
