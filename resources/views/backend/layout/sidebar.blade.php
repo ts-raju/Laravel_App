@@ -14,7 +14,7 @@
           <img src="{{ asset('backend/img/avatar5.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"> Raj Lama</a>
+          <a href="#" class="d-block"> {{ __('msg.Raj Lama') }} </a>
         </div>
       </div>
 
@@ -27,7 +27,7 @@
             <a href="/admin" class="nav-link @yield('dashboard')">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                {{ __('msg.Dashboard') }}
               </p>
             </a>
           </li>
@@ -38,7 +38,7 @@
             <a href="#" class="nav-link @yield('main-profile')">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                User Profile
+                {{ __('msg.Profile') }}
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -46,13 +46,13 @@
               <li class="nav-item">
                 <a href="/admin/profile" class="nav-link @yield('profile')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Add Profile </p>
+                  <p> {{ __('msg.Add Profile') }} </p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/view-profile" class="nav-link @yield('view-profile')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> View Profile </p>
+                  <p> {{ __('msg.View Profile') }} </p>
                 </a>
               </li>
             </ul>
@@ -61,7 +61,7 @@
             <a href="#" class="nav-link @yield('links')">
               <i class="nav-icon fas fa-link"></i>
               <p>
-                Link Setup
+                {{ __('msg.Link Setup') }}
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -69,25 +69,25 @@
               <li class="nav-item">
                 <a href="/admin/create-links" class="nav-link @yield('create_links')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Create Links </p>
+                  <p> {{ __('msg.Create Links') }} </p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/profile-links" class="nav-link @yield('view_links')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Linked Profiles </p>
+                  <p> {{ __('msg.Linked Profiles') }} </p>
                 </a>
               </li>
             </ul>
           </li>
 
-          <li class="nav-header"> ATTRIBUTE SETUP </li>
+          <li class="nav-header"> {{ __('msg.ATTRIBUTE SETUP') }} </li>
 
           <li class="nav-item has-treeview @yield('aopen')">
             <a href="#" class="nav-link @yield('address')">
               <i class="nav-icon fas fa-street-view"></i>
               <p>
-               	Address Setup
+               	{{ __('msg.Address Setup') }}
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -95,19 +95,19 @@
               <li class="nav-item">
                 <a href="/admin/add-states" class="nav-link @yield('state')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Add Province </p>
+                  <p> {{ __('msg.Add Province') }} </p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/add-district" class="nav-link @yield('district')">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Add Districts </p>
+                  <p> {{ __('msg.Add District') }} </p>
                 </a>
               </li>
             </ul>
           </li>
 
-          <li class="nav-header"> EXTRA </li>
+          <li class="nav-header"> {{ __('msg.Extra') }} </li>
           <li class="nav-item">
             <a href="pages/calendar.html" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>

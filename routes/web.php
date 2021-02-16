@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/admin', function () {
+Route::get('/admin/{lang}', function ($lang) {
     return view('backend.index');
 });
 

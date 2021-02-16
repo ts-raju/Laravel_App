@@ -4,7 +4,7 @@
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-user"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Total Profile</span>
+                <span class="info-box-text"> {{ __('msg.Total Profile') }} </span>
                 <span class="info-box-number">
                  154
                 </span>
@@ -19,7 +19,7 @@
               <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-link"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text"> Total Links </span>
+                <span class="info-box-text"> {{ __('msg.Total Links') }} </span>
                 <span class="info-box-number"> 12 </span>
               </div>
               <!-- /.info-box-content -->
@@ -36,7 +36,7 @@
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-users"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text"> Total Groups </span>
+                <span class="info-box-text"> {{ __('msg.Total Groups') }} </span>
                 <span class="info-box-number"> 8 </span>
               </div>
               <!-- /.info-box-content -->
@@ -49,7 +49,7 @@
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-user-check"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">New Members</span>
+                <span class="info-box-text"> {{ __('msg.New Members') }} </span>
                 <span class="info-box-number"> 100 </span>
               </div>
               <!-- /.info-box-content -->
@@ -66,10 +66,10 @@
         	<section class="col-lg-6 connectedSortable">
                 <div class="card">
                   <div class="card-header bg-info">
-                    <h3 class="card-title">Latest Members</h3>
+                    <h3 class="card-title"> {{ __('msg.Latest Members') }} </h3>
 
                     <div class="card-tools">
-                      <span class="badge badge-danger">8 New Members</span>
+                      <span class="badge badge-danger">8 {{ __('msg.New Members') }}</span>
                       <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
                       </button>
                       <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
@@ -123,7 +123,7 @@
                     <!-- /.users-list -->
 
                     <div class="card-footer text-center">
-		                <a href="#" class="uppercase">View All Users</a>
+		                <a href="#" class="uppercase"> {{ __('msg.View All Profiles') }} </a>
 		             </div>
                   </div>
               	</div>
@@ -134,7 +134,7 @@
         	<section class="col-lg-6 connectedSortable">
                 <div class="card">
 	              <div class="card-header bg-primary">
-	                <h3 class="card-title"> Groups </h3>
+	                <h3 class="card-title"> {{ __('msg.Groups') }} </h3>
 
 	                <div class="card-tools">
 	                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -155,7 +155,7 @@
 	                    </div>
 	                    <div class="product-info">
 	                      <a href="javascript:void(0)" class="product-title"> Group One (1)
-	                        <span class="badge badge-info float-right"> 1200 Members </span></a>
+	                        <span class="badge badge-info float-right"> 1200 {{ __('msg.Members') }} </span></a>
 	                      <span class="product-description">
 	                        Short Description About Group
 	                      </span>
@@ -169,7 +169,7 @@
 	                    </div>
 	                    <div class="product-info">
 	                      <a href="javascript:void(0)" class="product-title"> Group Two (2)
-	                        <span class="badge badge-info float-right"> 500 Members </span></a>
+	                        <span class="badge badge-info float-right"> 500 {{ __('msg.Members') }} </span></a>
 	                      <span class="product-description">
 	                        Short Description About Group
 	                      </span>
@@ -182,7 +182,7 @@
 	                    </div>
 	                    <div class="product-info">
 	                      <a href="javascript:void(0)" class="product-title"> Group Three (3)
-	                        <span class="badge badge-info float-right"> 600 Members </span></a>
+	                        <span class="badge badge-info float-right"> 600 {{ __('msg.Members') }} </span></a>
 	                      <span class="product-description">
 	                        Short Description About Group
 	                      </span>
@@ -196,7 +196,7 @@
 	                    <div class="product-info">
 	                      <a href="javascript:void(0)" class="product-title">
 	                        Group Four (4) <span class="badge badge-info float-right">
-	                        350 Members
+	                        350 {{ __('msg.Members') }}
 	                      </span>
 	                      </a>
 	                      <span class="product-description">
@@ -211,7 +211,7 @@
 	                    </div>
 	                    <div class="product-info">
 	                      <a href="javascript:void(0)" class="product-title"> Group 5
-	                        <span class="badge badge-info float-right"> 460 Members </span></a>
+	                        <span class="badge badge-info float-right"> 460 {{ __('msg.Members') }} </span></a>
 	                      <span class="product-description">
 	                        Short Description About Group
 	                      </span>
@@ -222,7 +222,7 @@
 	              </div>
 	              <!-- /.card-body -->
 	              <div class="card-footer text-center">
-	                <a href="javascript:void(0)" class="uppercase">View All Groups </a>
+	                <a href="javascript:void(0)" class="uppercase"> {{ __('msg.View All Groups') }} </a>
 	              </div>
               <!-- /.card-footer -->
             	</div>
