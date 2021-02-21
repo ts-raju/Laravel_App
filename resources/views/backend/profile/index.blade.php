@@ -8,6 +8,14 @@
 @section('profile', 'active')
 
 @section('styles')
+    <style>
+        img{
+            max-width:180px;
+            }
+            input[type=file]{
+            padding:10px;
+        }
+    </style>
     <link rel="stylesheet" href="{{ asset('backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 @endsection
@@ -180,5 +188,21 @@
         "responsive": true,
       });
     });
+
+
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
   </script>
 @endsection

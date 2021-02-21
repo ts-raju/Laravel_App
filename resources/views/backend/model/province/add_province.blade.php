@@ -7,23 +7,40 @@
             <span aria-hidden="true">&times;</span>
         </button>
         </div>
-        <form role="form">
+        <form action="{{ route('province.store') }}" method="post">
+
+            {{ csrf_field() }}
+
         <div class="modal-body">
             <div class="card-body">
                 <div class="row">
+
+
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Province No.</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1" min="1" max="7" placeholder="P No.">
+                            <label for="provinceNo">Province No.</label>
+                            <input type="number" name="pno" class="form-control" min="1" placeholder="P No." required>
                         </div>
                     </div>
 
                     <div class="col-md-9">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Province Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Province Name">
+                            <label for="provinceName">Province Name</label>
+                            <input type="text" name="pName" class="form-control" placeholder="Enter Province Name" required>
                         </div>
                     </div>
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="provinceName">Province Name in Nepali</label>
+                            <input type="text" name="pNameNepali" class="form-control" placeholder="Enter Province Name" required>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -31,7 +48,7 @@
         </div>
         <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-info"> Add </button>
+            <input type="submit" class="btn btn-info" value="Add Province">
         </div>
         </form>
     </div>

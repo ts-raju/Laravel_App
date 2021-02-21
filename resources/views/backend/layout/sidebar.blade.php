@@ -93,7 +93,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/admin/add-states" class="nav-link @yield('state')">
+                <a href="/admin/province" class="nav-link @yield('state')">
                   <i class="far fa-circle nav-icon"></i>
                   <p> {{ __('msg.Add Province') }} </p>
                 </a>

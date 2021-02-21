@@ -7,33 +7,52 @@
             <span aria-hidden="true">&times;</span>
         </button>
         </div>
-        <form role="form">
-            <div class="modal-body">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Province No.</label>
-                                <input type="number" class="form-control" id="exampleInputEmail1" min="1" max="7" placeholder="P No.">
-                            </div>
-                        </div>
+        <form action="{{ route('province.update','test' ) }}" method="post" id="editForm">
 
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Province Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Province Name">
-                            </div>
+            {{ csrf_field('patch') }}
+            {{ method_field('PUT') }}
+
+        <div class="modal-body">
+            <div class="card-body">
+                <div class="row">
+
+                    <input type="hidden" name="pid" id="pid">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="provinceNo">Province No.</label>
+                            <input type="number" name="pno" class="form-control" min="1" id="province_no" placeholder="P No."  required>
+
                         </div>
                     </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="provinceName">Province Name</label>
+                            <input type="text" name="pName" class="form-control" id="prov_name" placeholder="Enter Province Name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="provinceName">Province Name in Nepali</label>
+                            <input type="text" name="pNameNepali" class="form-control" id="pnepali" placeholder="Enter Province Name" id="pNameNepali" required>
+                        </div>
+                    </div>
+
 
                 </div>
 
             </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-info"> Update </button>
-            </div>
-            </form>
+
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-info" value="Update Province">
+        </div>
+        </form>
     </div>
     <!-- /.modal-content -->
     </div>

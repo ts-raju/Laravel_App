@@ -7,16 +7,19 @@
             <span aria-hidden="true">&times;</span>
         </button>
         </div>
-        <form role="form">
-        <div class="modal-body">
+        <form action="{{ route('province.destroy', 'test') }}" method="post">
+            {{ method_field('delete') }}
+            {{ csrf_field() }}
+            <div class="modal-body">
 
-            <div class="card-body">
+            <div class="card-body text-center">
+                <input type="hidden" name="id" class="form-control" id="pid" value="">
                 <b> Do You Really Want To Delete This Province ? </b>
             </div>
 
         </div>
         <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-danger"> Yes </button>
+            <button type="submit" class="btn btn-danger"> Yes </button>
             <button type="button" class="btn btn-info" data-dismiss="modal"> No </button>
         </div>
         </form>
