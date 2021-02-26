@@ -14,4 +14,9 @@ class Province extends Model
         'pName',
         'pNameNepali',
     ];
+
+    function getDistrict(){
+        return $this->hasMany(District::class);
+        // return $this->hasMany('App\Models\District');
+    }
 }

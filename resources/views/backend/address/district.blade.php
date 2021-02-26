@@ -49,14 +49,17 @@
                                 <tr>
                                     <th>District ID</th>
                                     <th>District Name</th>
+                                    <th>जिल्ला</th>
                                     <th> Action </th>
                                 </tr>
                                 </thead>
 
                                 <tbody>
+                                    @foreach($dist as $district)
                                     <tr>
-                                        <td> 1 </td>
-                                        <td> Kathmandu </td>
+                                        <td> {{ $district->id }} </td>
+                                        <td> {{ $district->dName }} </td>
+                                        <td> {{ $district->dNameNepali }} </td>
                                         <td style="text-align:center;">
 
                                             <a href="#" class="btn btn-warning" data-toggle="modal"  data-backdrop="false" data-target="#edit-district">
@@ -70,12 +73,14 @@
 
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
 
                                 <tfoot>
                                     <tr>
                                         <th>District ID</th>
                                         <th>District Name</th>
+                                        <th>जिल्ला</th>
                                         <th> Action </th>
                                     </tr>
                               </tfoot>

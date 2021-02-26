@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\District;
+use App\Models\Province;
 use Illuminate\Http\Request;
 
 class DistrictController extends Controller
@@ -14,7 +15,9 @@ class DistrictController extends Controller
      */
     public function index()
     {
-        //
+        $dist = District::with('province')->get();
+        $prov = Province::all();
+        return view('backend.address.district', compact('dist', 'prov'));
     }
 
     /**
@@ -35,7 +38,19 @@ class DistrictController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'province_id'=>'required',
+            'dName'=>'required',
+            'dNameNepali'=>'required',
+        ]);
+
+        Province::create([
+            'province_id' => $request->pno,
+            'dName' => $request->dName,
+            'dNameNepali' => $request->dNameNepali,
+        ]);
+
+        return redirect('/admin/province')->with('success','Province Successfully Added !!');
     }
 
     /**

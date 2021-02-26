@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProvinceController;
+use App\Http\Controllers\DistrictController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,9 +34,6 @@ Route::get('/admin/view-profile', function () {
 
 
 
-Route::get('/admin/add-district', function () {
-    return view('backend.address.district');
-});
 
 Route::get('/admin/create-links', function () {
     return view('backend.link.create_link');
@@ -49,3 +47,5 @@ Route::get('/admin/profile-links', function () {
 
 
 Route::resource('admin/province', ProvinceController::class);
+
+Route::resource('admin/district', DistrictController::class);

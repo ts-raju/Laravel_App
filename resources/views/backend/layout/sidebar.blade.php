@@ -99,7 +99,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin/add-district" class="nav-link @yield('district')">
+                <a href="{{ route('district.index') }}" class="nav-link @yield('district')">
                   <i class="far fa-circle nav-icon"></i>
                   <p> {{ __('msg.Add District') }} </p>
                 </a>

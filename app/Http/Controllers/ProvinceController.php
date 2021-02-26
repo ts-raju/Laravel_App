@@ -14,6 +14,7 @@ class ProvinceController extends Controller
      */
     public function index()
     {
+        // return Province::find(1)->getDistrict;
         $prv = Province::all();
         return view('backend.address.state', compact('prv'));
     }

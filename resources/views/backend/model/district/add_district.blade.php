@@ -7,15 +7,37 @@
             <span aria-hidden="true">&times;</span>
         </button>
         </div>
-        <form role="form">
+        <form action="{{ route('district.store') }}" method="post">
+
+            {{ csrf_field() }}
+
         <div class="modal-body">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label for="exampleInputEmail1"> District ID </label>
+                            <label for="districtId"> District ID </label>
                             <input type="number" class="form-control" readonly>
                         </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="Province">Province</label>
+                            <select name="religion" class="form-control">
+                                <option class="form-control" selected> --Choose Province-- </option>
+
+                                $@foreach ($prov as $province)
+                                <option class="form-control" selected> {{ $province->pName }} </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+
                     </div>
 
                     <div class="col-md-9">
@@ -26,12 +48,25 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">District Name in नेपालि</label>
+                            <input type="text" class="form-control" placeholder="Enter District Name">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
         <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-info"> Add </button>
+            <input type="submit" class="btn btn-info" value="Add District">
         </div>
         </form>
     </div>
