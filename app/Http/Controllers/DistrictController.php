@@ -38,14 +38,15 @@ class DistrictController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request,[
             'province_id'=>'required',
             'dName'=>'required',
             'dNameNepali'=>'required',
         ]);
 
-        Province::create([
-            'province_id' => $request->pno,
+        District::create([
+            'province_id' => $request->province_id,
             'dName' => $request->dName,
             'dNameNepali' => $request->dNameNepali,
         ]);

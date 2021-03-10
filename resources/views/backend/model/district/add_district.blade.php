@@ -24,11 +24,11 @@
                     <div class="col-md-9">
                         <div class="form-group">
                             <label for="Province">Province</label>
-                            <select name="religion" class="form-control">
-                                <option class="form-control" selected> --Choose Province-- </option>
+                            <select name="province_id" class="form-control">
+                                <option class="form-control"  selected> --Choose Province-- </option>
 
                                 $@foreach ($prov as $province)
-                                <option class="form-control" selected> {{ $province->pName }} </option>
+                                <option class="form-control" value="{{ $province->pno }}" selected> {{ $province->pName }} </option>
                                 @endforeach
                             </select>
                         </div>
@@ -43,7 +43,7 @@
                     <div class="col-md-9">
                         <div class="form-group">
                             <label for="exampleInputEmail1">District Name</label>
-                            <input type="text" class="form-control" placeholder="Enter District Name">
+                            <input type="text" name="dName" class="form-control" placeholder="Enter District Name">
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <div class="col-md-9">
                         <div class="form-group">
                             <label for="exampleInputEmail1">District Name in नेपालि</label>
-                            <input type="text" class="form-control" placeholder="Enter District Name">
+                            <input type="text" name="dNameNepali"class="form-control" placeholder="Enter District Name">
                         </div>
                     </div>
                 </div>
